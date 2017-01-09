@@ -176,7 +176,7 @@ function dirty30(one, two, three){
   return ( (one + two + three) > 30);
 }
 
-console.log(dirty30(5,10,15));
+console.log(dirty30(5,10,16));
 /*
  * #10
  * Function - evenStevens
@@ -188,8 +188,10 @@ console.log(dirty30(5,10,15));
  * The function will return true if the number passed in is an even integer, otherwise it will return false.
  * Console.log your result.
 */ 
-
-
+function evenSteven(num){
+  return num % 2 === 0;
+  }
+console.log(evenSteven(2)); 
 /*
  * #11
  * Function - daClub
