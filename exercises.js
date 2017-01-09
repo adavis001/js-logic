@@ -1,23 +1,23 @@
 /*
 If statements - Evaluates (or checks) a condition. If the condition is true, any statements in the subsequent code block are executed
 */
-/*
+
 var today = new Date();
 
 if(today === "Friday"){
   console.log("Let's Party!");
 }
-*/
+
 /*
 If/else statements = Evaluates (or checks) a condition. If the condition is true, the first code block is executed. If the condition is false, the second code block is executed instead.
 */
-/*
+
 if(today === "Friday"){
   console.log("Let's Party!");
 }else{
   console.log("Get back to coding!");
 }
-*/
+
 
 /*
  * #1
@@ -31,7 +31,7 @@ if(today === "Friday"){
 */
 function canVote(age){
   if(age >= 18);
-    console.log("Can!");
+    console.log("true");
 }
 
 console.log(canVote(29));
@@ -65,8 +65,11 @@ console.log(login("test1234"));
  * The function will return true if the first number is greater than the second.
  * Console.log your result.
 */
+function isGreaterThan(first, second){
+  return (first > second);
+}
 
-
+console.log(isGreaterThan(2,1));
 /*
  * #4
  * Function - mustBeTrue
@@ -78,7 +81,11 @@ console.log(login("test1234"));
  * The function will return true if the value passed into the function is "true".
  * Console.log your result.
 */
-
+function mustBeTrue(boo){
+  if ("true")
+    console.log(true);
+}
+console.log ("true");
 
 /*
  * #5
@@ -91,8 +98,11 @@ console.log(login("test1234"));
  * The function will return the message "Word to Big Bird!", if the string passed into the function is a three-letter word. 
  * Console.log your result.
 */
-
-
+function bigBird (word){
+  if (word.length === 3)
+    console.log("Word to Big Bird!");
+}
+console.log(bigBird("Big"));
 /*
  * #6
  * Function - isEqual
@@ -105,7 +115,13 @@ console.log(login("test1234"));
  * If the strings are equal, the function will return the message "You look mahvelous!" Otherwise, return the message: "I don't know who you are anymore." 
  * Console.log your result.
 */
-
+function isEqual(first, second){
+  if (first === second)
+    console.log("You look mahvelous!");
+  else
+    console.log("I don't know who you are anymore.");
+  }
+console.log(isEqual(1,2));
 
 /*
  * #7
