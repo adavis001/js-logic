@@ -204,11 +204,16 @@ console.log(evenSteven(2));
  * If BOTH values are 21 or over, the function will return the message: "Welcome to the Legends Lounge." Otherwise, it will return the message: "Chuck E Cheese is across the street."
  * Console.log your result.
 */ 
-
-
-/*
+function daClub(cover, age){
+  if (cover >= 21 && age >= 21);
+    console.log("Welcome to the Legends Lounge.");
+  if (cover < 21 || age < 21);
+      console.log("Chuck E Cheese is across the street.");
+  }
+console.log(daClub(21,19));
+/*  
  * #12
- * Function - graduation
+unction - graduation
  * Create a function named `graduation` which takes two parameters: `credits` and `thesis`.
  *
  *  @param Datatype: Number `credit`
@@ -218,8 +223,14 @@ console.log(evenSteven(2));
  * If EITHER the number value is greater than or equal to 120 or the boolean value is true, then the function will return the message: "Congratulations on a job well done." Otherwise, return the message: "See you in summer school."
  * Console.log your result.
 */ 
+function graduation(credits, thesis){
+ if (credits >= 120 || thesis === true);
+    console.log("Congratulations on a job well done.");
+ if (credits < 120 || thesis === false);
+    console.log("See you in summer school.");
+}
 
-
+console.log(graduation(122,true));
 /*
  * #13
  * Function - moneyTrain
