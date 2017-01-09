@@ -154,8 +154,11 @@ console.log(notEqual("Justin Timberlake", "Justin Timberlake"));
  * The function will return true if the number passed into the function is greater than 100, otherwise it will return false.
  * Console.log your result.
 */ 
+function spareChange(money){
+  return (money > 100);
+}
 
-
+console.log(spareChange(101));
 /*
  * #9
  * Function - dirty30
