@@ -1,22 +1,23 @@
 /*
 If statements - Evaluates (or checks) a condition. If the condition is true, any statements in the subsequent code block are executed
 */
+/*
 var today = new Date();
 
 if(today === "Friday"){
   console.log("Let's Party!");
-};
-
+}
+*/
 /*
 If/else statements = Evaluates (or checks) a condition. If the condition is true, the first code block is executed. If the condition is false, the second code block is executed instead.
 */
-
+/*
 if(today === "Friday"){
   console.log("Let's Party!");
 }else{
   console.log("Get back to coding!");
-};
-
+}
+*/
 
 /*
  * #1
@@ -28,7 +29,12 @@ if(today === "Friday"){
  *
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
+function canVote(age){
+  if(age >= 18);
+    console.log("Can!");
+}
 
+console.log(canVote(29));
 
 /*
  * #2
@@ -41,7 +47,11 @@ if(today === "Friday"){
  * The function will return the message: "Login Success!", if the string passed into the function is "test1234"
  * Console.log your result.
 */
-
+function login(password){
+  if(password === "test1234") 
+    console.log("Login Success!");
+}
+console.log(login("test1234"));
 
 /*
  * #3
