@@ -30,8 +30,9 @@ if(today === "Friday"){
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
 function canVote(age){
-  if(age >= 18);
+  if(age >= 18);{
     return("true");
+  }
 }
 console.log(canVote(29));
 
@@ -66,7 +67,9 @@ console.log(login("test1234"));
  * Console.log your result.
 */
 function isGreaterThan(first, second){
-  return (first > second);
+  if (first > second){
+    return true;
+  }
 }
 
 console.log(isGreaterThan(2,1));
@@ -121,7 +124,7 @@ function isEqual(first, second){
   else
     return("I don't know who you are anymore.");
   }
-console.log(isEqual(1,2));
+console.log(isEqual("cat", "dog"));
 
 /*
  * #7
@@ -189,7 +192,11 @@ console.log(dirty30(5,10,16));
  * Console.log your result.
 */ 
 function evenSteven(num){
-  return num % 2 === 0;
+  if (num % 2 === 0){
+    return true;
+  }else{
+    return false;
+    }
   }
 console.log(evenSteven(2)); 
 /*
@@ -211,7 +218,7 @@ function daClub(cover, age){
     return "Chuck E Cheese is across the street.";
   }
 }
-console.log(daClub(21,19));
+console.log(daClub(21,29));
 /*  
  * #12
 unction - graduation
@@ -243,17 +250,19 @@ console.log(graduation(122,true));
  *
  * The function will return the message: "You are riding Honolulu's Rail.", if the number value is less than 50, otherwise it will return the message: "You are riding an Amtrak.", if the number value is less than 100, and return the message: "Now you ballin' in the Shinkansen!", if the number value is greater than or equal to 100.
  * Console.log your result.
-*/ 
+*/
+/* 
 function moneyTrain(speed){
-  if (speed < 50)
+  if (speed < 50){
     return("You are riding Honolulu's Rail.");
-  if (speed < 100)
+    if (speed < 100);
     return("You are riding an Amtrak.");
-  if (speed > 100)
+    if  (speed > 100)
     return("Now you ballin' in the Shinkansen!");
+  }
 }
 console.log(moneyTrain(9000));
-
+*/
 /*
  * #14
  * Function - buyDoughnut
@@ -267,17 +276,23 @@ console.log(moneyTrain(9000));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
-/*
-var budget = 21;
-var doughnutPrice = 3;
+
+var budget = 100;
+var doughnutPrice = 5;
 var doughnutBought = 0;
 
 function buyDoughnut(){
-    return (budget(doughnutPrice * doughnutBought));
+  if (budget >= doughnutPrice){
+    budget -= doughnutPrice;
+    doughnutBought++;
+  }
 }
-console.log(buyDoughnut());
-console.log(budget);
-*/
+
+buyDoughnut();
+buyDoughnut();
+
+console.log("budget = " + budget + " bought = " + doughnutBought);
+
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
 
@@ -333,14 +348,17 @@ for (var i = 0; i<myFavFoods.length; i++){
  * The function will loop through and add up all the values in the array that is passed into the function and return the total.
  * Console.log your result.
 */
-var numArray = [1, 3, 5, 7, 9];
+var numArray = [3, 5, 7, 9, 11];
 var total = 0;
 
 function sumItUp(arr){
-  for (var i = 0; i<numArray.length; i++);
-    return(sumItUp);
+  for (var i = 0; i<arr.length; i++){
+    total += arr[i];    
+  }
+  return total;
 }
-console.log(sumItUp);
+
+console.log("sumItUp: " + sumItUp(numArray));
 
 /*
  * #18
@@ -353,14 +371,26 @@ console.log(sumItUp);
  * The function will loop through the players array and will put all the even number indexed players in the `east` array and the rest in the `west` array.
  * Console.log both the east and west arrays.
 */ 
-/*
+
   var players = ["LeBron", "Linsanity", "Kawhi", "Kobe", "Yao Ming", "Bird", "Jordan"];
   var east = [];
   var west = [];
 function allStars(ballers){
-    for (var i = )
+    for (var i = 0; i <ballers.length; i++){
+      //console.log(ballers[i]);
+      if(i % 2 === 0){
+        //console.log(ballers[i]);
+        east.push(ballers[i]);
+      }else{
+        west.push(ballers[i]);
+      }
+    }
 }
-*/
+
+
+allStars(players);
+console.log(east);
+console.log(west);
 
 /*
  * #19
