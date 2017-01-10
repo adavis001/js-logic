@@ -226,7 +226,7 @@ unction - graduation
 function graduation(credits, thesis){
  if (credits >= 120 || thesis === true);
     console.log("Congratulations on a job well done.");
- if (credits < 120 || thesis === false);
+ if (credits < 120 || thesis !== true);
     console.log("See you in summer school.");
 }
 
@@ -242,7 +242,15 @@ console.log(graduation(122,true));
  * The function will return the message: "You are riding Honolulu's Rail.", if the number value is less than 50, otherwise it will return the message: "You are riding an Amtrak.", if the number value is less than 100, and return the message: "Now you ballin' in the Shinkansen!", if the number value is greater than or equal to 100.
  * Console.log your result.
 */ 
-
+function moneyTrain(speed){
+  if (speed < 50)
+    console.log("You are riding Honolulu's Rail.");
+  if (speed < 100)
+    console.log("You are riding an Amtrak.");
+  if (speed > 100)
+    console.log("Now you ballin' in the Shinkansen!");
+}
+console.log(moneyTrain(9000));
 
 /*
  * #14
@@ -257,8 +265,15 @@ console.log(graduation(122,true));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
+var budget = 21;
+var doughnutPrice = 5;
+var doughnutBought = 1;
 
-
+function buyDoughnut(){
+  return (budget - doughnutPrice * doughnutBought);
+}
+console.log(buyDoughnut(1));
+console.log(doughnutBought);
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
 
@@ -285,14 +300,20 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 4"
  * "Player: 5"
 */
+var players = ["Player 1", "Player 2", "Player 3", "Player 4", "Player 5"];
 
+for (var i = 0; i<players.length; i++){
+    console.log(players[i]);
+}
 
 /* 
  * #16
  * Create a for loop that will iterate and console.log each item in the array below:
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
-
+for (var i = 0; i<myFavFoods.length; i++){
+  console.log(myFavFoods[i]);
+}
 
 /*
  * #17
