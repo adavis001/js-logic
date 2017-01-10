@@ -329,7 +329,14 @@ for (var i = 0; i<myFavFoods.length; i++){
  * The function will loop through and add up all the values in the array that is passed into the function and return the total.
  * Console.log your result.
 */
+var numArray = [1, 3, 5, 7, 9];
+var total = 0;
 
+function sumItUp(arr){
+  for (var i = 0; i<numArray.length; i++);
+    console.log(sumItUp);
+}
+console.log(sumItUp);
 
 /*
  * #18
@@ -346,6 +353,9 @@ for (var i = 0; i<myFavFoods.length; i++){
   var players = ["LeBron", "Linsanity", "Kawhi", "Kobe", "Yao Ming", "Bird", "Jordan"];
   var east = [];
   var west = [];
+function allStars(ballers){
+    for (var i = )
+}
 
 /*
  * #19
