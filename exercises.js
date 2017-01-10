@@ -31,10 +31,10 @@ if(today === "Friday"){
 */
 function canVote(age){
   if(age >= 18);
-    console.log("true");
+    return("true");
 }
-
 console.log(canVote(29));
+
 
 /*
  * #2
@@ -49,7 +49,7 @@ console.log(canVote(29));
 */
 function login(password){
   if(password === "test1234") 
-    console.log("Login Success!");
+    return("Login Success!");
 }
 console.log(login("test1234"));
 
@@ -83,7 +83,7 @@ console.log(isGreaterThan(2,1));
 */
 function mustBeTrue(boo){
   if ("true")
-    console.log(true);
+    return(true);
 }
 console.log ("true");
 
@@ -100,7 +100,7 @@ console.log ("true");
 */
 function bigBird (word){
   if (word.length === 3)
-    console.log("Word to Big Bird!");
+    return("Word to Big Bird!");
 }
 console.log(bigBird("Big"));
 /*
@@ -117,9 +117,9 @@ console.log(bigBird("Big"));
 */
 function isEqual(first, second){
   if (first === second)
-    console.log("You look mahvelous!");
+    return("You look mahvelous!");
   else
-    console.log("I don't know who you are anymore.");
+    return("I don't know who you are anymore.");
   }
 console.log(isEqual(1,2));
 
@@ -137,9 +137,9 @@ console.log(isEqual(1,2));
 */
 function notEqual(first, second){
   if (first !== second)
-    console.log("Opposites do attract.");
+    return("Opposites do attract.");
   else
-    console.log("Cause it's like you're my mirror!"); 
+    return("Cause it's like you're my mirror!"); 
 }
 console.log(notEqual("Justin Timberlake", "Justin Timberlake"));
 
@@ -205,11 +205,12 @@ console.log(evenSteven(2));
  * Console.log your result.
 */ 
 function daClub(cover, age){
-  if (cover >= 21 && age >= 21);
-    console.log("Welcome to the Legends Lounge.");
-  if (cover < 21 || age < 21);
-      console.log("Chuck E Cheese is across the street.");
+  if (cover >= 21 && age >= 21){
+    return "Welcome to the Legends Lounge.";
+  }else{
+    return "Chuck E Cheese is across the street.";
   }
+}
 console.log(daClub(21,19));
 /*  
  * #12
@@ -224,10 +225,11 @@ unction - graduation
  * Console.log your result.
 */ 
 function graduation(credits, thesis){
- if (credits >= 120 || thesis === true);
-    console.log("Congratulations on a job well done.");
- if (credits < 120 || thesis !== true);
-    console.log("See you in summer school.");
+ if (credits >= 120 || thesis === true){
+    return("Congratulations on a job well done.");
+ }else{
+    return("See you in summer school.");
+ }
 }
 
 console.log(graduation(122,true));
@@ -244,11 +246,11 @@ console.log(graduation(122,true));
 */ 
 function moneyTrain(speed){
   if (speed < 50)
-    console.log("You are riding Honolulu's Rail.");
+    return("You are riding Honolulu's Rail.");
   if (speed < 100)
-    console.log("You are riding an Amtrak.");
+    return("You are riding an Amtrak.");
   if (speed > 100)
-    console.log("Now you ballin' in the Shinkansen!");
+    return("Now you ballin' in the Shinkansen!");
 }
 console.log(moneyTrain(9000));
 
@@ -265,15 +267,17 @@ console.log(moneyTrain(9000));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
+/*
 var budget = 21;
-var doughnutPrice = 5;
-var doughnutBought = 1;
+var doughnutPrice = 3;
+var doughnutBought = 0;
 
 function buyDoughnut(){
-  return (budget - doughnutPrice * doughnutBought);
+    return (budget(doughnutPrice * doughnutBought));
 }
-console.log(buyDoughnut(1));
-console.log(doughnutBought);
+console.log(buyDoughnut());
+console.log(budget);
+*/
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
 
@@ -334,7 +338,7 @@ var total = 0;
 
 function sumItUp(arr){
   for (var i = 0; i<numArray.length; i++);
-    console.log(sumItUp);
+    return(sumItUp);
 }
 console.log(sumItUp);
 
@@ -349,13 +353,14 @@ console.log(sumItUp);
  * The function will loop through the players array and will put all the even number indexed players in the `east` array and the rest in the `west` array.
  * Console.log both the east and west arrays.
 */ 
-
+/*
   var players = ["LeBron", "Linsanity", "Kawhi", "Kobe", "Yao Ming", "Bird", "Jordan"];
   var east = [];
   var west = [];
 function allStars(ballers){
     for (var i = )
 }
+*/
 
 /*
  * #19
